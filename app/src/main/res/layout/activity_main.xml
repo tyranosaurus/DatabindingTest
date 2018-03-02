@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
+
         <variable
             name="activity"
             type="com.tyranotyrano.databindingtest.MainActivity" />
@@ -33,8 +35,15 @@
             android:id="@+id/button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
+            android:text="이름바꾸기"
             android:onClick="@{activity::onButtonClick}"/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@{@drawable/image01}"
+            android:onClick="@{activity::onImageClick}"/>
 
     </LinearLayout>
 

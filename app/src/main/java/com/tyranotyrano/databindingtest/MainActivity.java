@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding = null;
 
+    User user = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,11 +24,18 @@ public class MainActivity extends AppCompatActivity {
         binding.setActivity(MainActivity.this);
 
         // User 변수 할당
-        User user = new User("최", "영진");
+        user = new User("최", "영진");
         binding.setUser(user);
     }
 
     public void onButtonClick(View v) {
-        Toast.makeText(MainActivity.this, "버튼 클릭", Toast.LENGTH_SHORT).show();
+        user.setFirstName("Hello");
+        user.setLastName("Databinding");
+
+        Toast.makeText(MainActivity.this, "이름 바꾸기 성공", Toast.LENGTH_SHORT).show();
+    }
+
+    public void onImageClick(View v) {
+        Toast.makeText(MainActivity.this, "이미지 클릭", Toast.LENGTH_SHORT).show();
     }
 }
