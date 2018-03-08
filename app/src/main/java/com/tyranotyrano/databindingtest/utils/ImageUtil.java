@@ -17,6 +17,7 @@ public class ImageUtil {
      *   3. 해당 함수의 첫번째 매개변수는 BindingAdapter 어노테이션으로 설정한 속성값들을 적용할 View
      *
      * imageView : src 속성을 적용할 view
+     * imageDrawable : src 속성에 적용할 Drawable
      * resId : BindingAdapter 어노테이션으로 가져온 src 속성에 설정한 값
      * */
     @BindingAdapter("src")

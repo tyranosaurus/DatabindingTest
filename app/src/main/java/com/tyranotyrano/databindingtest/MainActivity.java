@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        // MainActivity 레이아웃 바인딩
         binding = DataBindingUtil.setContentView(MainActivity.this, R.layout.activity_main);
 
         // Activity 변수 할당
